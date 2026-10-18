@@ -2,7 +2,7 @@ from pathlib import Path
 
 from datasets import load_dataset
 
-DATA_DIR = Path(__file__).parent / "fiqa"
+DATA_DIR = Path(__file__).parent / "data" / "fiqa"
 DATA_DIR.mkdir(exist_ok=True)
 
 corpus = load_dataset("BeIR/fiqa", "corpus", split="corpus")
