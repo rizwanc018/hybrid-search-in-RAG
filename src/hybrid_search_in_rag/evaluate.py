@@ -23,7 +23,6 @@ More info: https://github.com/beir-cellar/beir/wiki/Leaderboard
 
 import math
 from collections import defaultdict
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -73,7 +72,7 @@ print(f"Evaluating on {len(sample)} queries (sampled from {len(queries_with_qrel
 
 
 # Step 3: Wire up the retrieval methods
-
+# test
 bm25 = BM25Retriever()
 dense = DenseRetriever()
 corpus_by_id = load_corpus().set_index("_id")
